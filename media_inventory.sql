@@ -269,7 +269,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `name`, `password`) VALUES
-(1, 'jd', 'JD Simpkins', 'pass');
+(1, 'ST', 'Samuel Rhornhill', 'letmein');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
