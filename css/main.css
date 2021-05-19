@@ -1,0 +1,305 @@
+@font-face {
+  font-family: open-sans;
+  src: url(../fonts/OpenSans-Regular.ttf); }
+body {
+  font-size: 14px;
+  font-family: open-sans;
+  background-color: #f1f1f1;
+  color: black; }
+
+header {
+  width: 100%;
+  background-color: #23282D;
+  height: 55px;
+  line-height: 55px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  color: white;
+  z-index: 99;
+  padding-left: 10px;
+  padding-right: 10px; }
+  header .log-out {
+    float: right;
+    margin-right: 30px; }
+    header .log-out a {
+      text-decoration: none;
+      color: red; }
+      header .log-out a:hover {
+        text-decoration: underline; }
+  header .welcome {
+    font-weight: bold; }
+
+.navigation {
+  background-color: #23282D;
+  width: 200px;
+  height: 100%;
+  float: left;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding-top: 40px;
+  color: white;
+  font-size: 16px; }
+  .navigation ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px; }
+    .navigation ul li {
+      margin: 0px;
+      padding: 0px; }
+      .navigation ul li a {
+        color: white;
+        text-decoration: none;
+        height: 45px;
+        line-height: 45px;
+        display: block;
+        padding-left: 10px; }
+        .navigation ul li a:hover {
+          background-color: #0073AA; }
+        .navigation ul li a .fa {
+          padding-right: 10px;
+          font-size: 120%;
+          color: #e1e1e1; }
+
+.content-area {
+  margin-left: 200px;
+  padding-top: 65px;
+  margin-bottom: 50px; }
+
+.log-in-box {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  background-color: white;
+  width: 400px;
+  box-shadow: 0px 0px 3px #999;
+  border-radius: 5px;
+  border: 1px solid #999;
+  margin-left: -200px;
+  padding: 10px;
+  color: blue; }
+  .log-in-box .logo {
+    float: left; }
+  .log-in-box h3 {
+    line-height: 64px;
+    float: right;
+    margin: 0px;
+    padding: 0px; }
+  .log-in-box form {
+    margin-top: 100px; }
+
+.section {
+  background-color: white;
+  box-shadow: 0px 0px 2px #999;
+  padding: 10px; }
+  .section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
+    margin-top: 5px; }
+  .section p {
+    margin: 0px;
+    padding: 5px 0px 5px 0px; }
+
+.dismiss {
+  position: absolute;
+  bottom: 5px;
+  right: 40px;
+  font-size: 80%; }
+  .dismiss a {
+    text-decoration: underline; }
+
+p.disclaimer {
+  font-size: 85%;
+  text-align: center;
+  padding-top: 10px;
+  text-align: center;
+  font-style: italic; }
+
+.btn-category {
+  background-color: #0073AA;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 15px 8px 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  float: left;
+  margin-top: 15px;
+  box-shadow: 1px 1px 3px #999; }
+  .btn-category:hover {
+    color: #e1e1e1;
+    text-decoration: none;
+    box-shadow: 0px 0px 1px #999; }
+
+.dynamic {
+  font-size: 135%;
+  font-weight: bold;
+  color: #0073AA; }
+  .dynamic a {
+    text-decoration: none !important; }
+
+.badge {
+  background-color: #0073AA; }
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  display: none; }
+
+.changePassword, .changeUsername, .changeName, .deleteContact, .deleteItem, .loanItem, .checkIn, .location-modal {
+  position: fixed;
+  top: 125px;
+  width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 101;
+  padding: 15px;
+  display: none; }
+  .changePassword h3, .changeUsername h3, .changeName h3, .deleteContact h3, .deleteItem h3, .loanItem h3, .checkIn h3, .location-modal h3 {
+    margin-top: 0px; }
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  z-index: 102;
+  opacity: 1 !important; }
+
+.show {
+  display: block; }
+
+.btn-custom {
+  background-color: #0073AA;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  font-size: 140%;
+  font-weight: bold;
+  color: white;
+  box-shadow: 2px 2px 4px #999;
+  border: none; }
+  .btn-custom:hover {
+    box-shadow: 0px 0px 3px #999; }
+
+.table-contact tr.list:hover {
+  background-color: #0073AA;
+  color: white;
+  cursor: pointer; }
+.table-contact tr.list td.check {
+  text-align: center; }
+  .table-contact tr.list td.check .fa {
+    font-size: 150%; }
+
+.table-items tr.list:hover {
+  background-color: #0073AA;
+  color: white;
+  cursor: pointer; }
+
+.table-categories tr.list {
+  color: #0073AA;
+  font-weight: bold; }
+  .table-categories tr.list:hover {
+    background-color: #0073AA;
+    color: white;
+    cursor: pointer; }
+
+.faIcon {
+  font-size: 125%;
+  margin-right: 10px;
+  color: black; }
+
+.blue-text {
+  color: #0073AA; }
+
+.editContact, .addContact {
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 105;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none; }
+  .editContact .container, .addContact .container {
+    max-width: 800px;
+    margin-bottom: 50px; }
+    .editContact .container label, .addContact .container label {
+      font-size: 140%; }
+
+.close2 {
+  position: fixed;
+  top: 15px;
+  right: 45px;
+  cursor: pointer;
+  font-size: 300%; }
+  .close2:hover {
+    color: red; }
+
+.steps {
+  font-size: 85%;
+  font-color: #999;
+  font-style: italic;
+  float: right;
+  margin-top: 35px; }
+
+.lg-bold {
+  font-weight: bold;
+  font-size: 150%; }
+
+.lg {
+  font-size: 125%;
+  margin-top: 5px; }
+
+.fadeIn {
+  display: block;
+  -webkit-animation: fadein 1.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1.5s;
+  /* Internet Explorer */
+  -o-animation: fadein 1.5s;
+  /* Opera < 12.1 */
+  animation: fadein 1.5s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=main.css.map */
