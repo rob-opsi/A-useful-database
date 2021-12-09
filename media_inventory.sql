@@ -2,7 +2,7 @@
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
+-- Host: morpheus.cypher.local
 -- Generation Time: Jul 1, 2021 at 06:27 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
@@ -39,6 +39,8 @@ CREATE TABLE IF NOT EXISTS `book_genre` (
 INSERT INTO `book_genre` (`id`, `genre_name`) VALUES
 (1, 'Comedy'),
 (2, 'Romance');
+(3, 'Science Fiction');
+(4, 'Factual');
 
 -- --------------------------------------------------------
 
@@ -112,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `phone`, `house_number`, `town`, `city`, `post_code`, `borrowed`, `notes`) VALUES
-(9, 'JD', 'Simpkins', 'jdsimpkins1981@gmail.com', '(740) 463-8013', '123 Main St.', 'Washington Court House', 'Ohio', '43160', 1, 'This is a sample note.');
+(9, 'Samuel', 'Thornhill', 'samuel.thornhill@gmail.com', '', '', 'Birmingham', 'United Kingdom', 'B735NR', 1, 'This is a note.');
 
 -- --------------------------------------------------------
 
@@ -134,10 +136,10 @@ INSERT INTO `game_genre` (`id`, `genre_name`) VALUES
 (1, 'Action'),
 (2, 'Adventure'),
 (3, 'RPG'),
-(5, 'Sports'),
-(6, 'Simulation'),
-(12, 'Shooter'),
-(14, 'Strategy');
+(4, 'Sports'),
+(5, 'Simulation'),
+(6, 'Shooter'),
+(7, 'Strategy');
 
 -- --------------------------------------------------------
 
@@ -186,11 +188,6 @@ CREATE TABLE IF NOT EXISTS `items` (
 --
 
 INSERT INTO `items` (`id`, `item_name`, `item_category`, `genre`, `type`, `album`, `track`, `artist`, `location`, `borrowed`, `author`, `isbn`) VALUES
-(42, 'As Good As It Gets', 4, '3', '', '', 0, '', 'NA', 1, '', '0'),
-(43, 'Wonderwall', 6, '22', '1', 'What''s The Story Morning Glory', 3, 'Oasis', 'NA', 0, '', '0'),
-(44, 'Call Of Duty', 1, '12', '1', '', 0, '', 'NA\r\n', 0, '', '0'),
-(45, 'Pulp Fiction', 4, '1', '', '', 0, '', 'NA', 0, '', '0'),
-(48, 'Sample Book Title', 7, '1', '1', '', 0, '', 'NA', 0, 'Some Guy', '12345568');
 
 -- --------------------------------------------------------
 
@@ -218,7 +215,8 @@ INSERT INTO `movie_genre` (`id`, `genre_name`) VALUES
 (8, 'Science Fiction'),
 (9, 'War'),
 (11, 'Documentary'),
-(14, 'Western');
+(14, 'Western')
+(10, 'Science Fiction');
 
 -- --------------------------------------------------------
 
@@ -243,7 +241,7 @@ INSERT INTO `music_genre` (`id`, `genre_name`) VALUES
 (10, 'Hip-Hop/Rap'),
 (11, 'Holiday'),
 (12, 'Gospel'),
-(13, 'Jazz'),
+(13, 'Christian'),
 (15, 'Pop'),
 (16, 'R&B/Soul'),
 (17, 'Reggae'),
@@ -269,7 +267,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `name`, `password`) VALUES
-(1, 'ST', 'Samuel Thornhill', 'letmein');
+(1, 'ST', 'Samuel Thornhill', 'password');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
